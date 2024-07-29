@@ -1,0 +1,34 @@
+body {
+    background: linear-gradient(72deg, green, yellow);
+    display: flex;
+    flex-direction: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#slider {
+    padding: 20px;
+    margin-top: 75px;
+    width: 100vw;
+    max-width: 750px;
+    height: 100vh;
+    max-height: 400px;
+    position: relative;
+    
+}
+
+#slider img{
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 800ms;
+    border-radius: 20px;
+
+}
+
+#slider img.selected {
+    opacity: 1;
+
+}
