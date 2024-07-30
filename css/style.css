@@ -1,10 +1,17 @@
 body {
-    background: linear-gradient(72deg, green, yellow);
+    background: linear-gradient(72deg, rgb(115, 116, 115), rgb(112, 112, 111));
     display: flex;
     flex-direction: center;
     justify-content: center;
     align-items: center;
 }
+
+#header-slider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+   
 
 #slider {
     padding: 20px;
@@ -14,6 +21,7 @@ body {
     height: 100vh;
     max-height: 400px;
     position: relative;
+  
     
 }
 
@@ -25,10 +33,11 @@ body {
     object-fit: cover;
     transition: opacity 800ms;
     border-radius: 20px;
-
+    
 }
 
 #slider img.selected {
     opacity: 1;
 
 }
+
